@@ -33,7 +33,6 @@ Given tag and word strings, create the HTML string with tags around the word, e.
 make_tags('i', 'Yay') → '<i>Yay</i>'
 make_tags('i', 'Hello') → '<i>Hello</i>'
 make_tags('cite', 'Yay') → '<cite>Yay</cite>'
-
 """
 def make_tags(tag, word):
   return '<' + tag + '>' + word + '</' + tag + '>'
@@ -88,7 +87,6 @@ Given a string of even length, return the first half. So the string "WooHoo" yie
 first_half('WooHoo') → 'Woo'
 first_half('HelloThere') → 'Hello'
 first_half('abcdef') → 'abc'
-
 """
 def first_half(str):
   mid = len(str)/2
